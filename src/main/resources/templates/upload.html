@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/js/upload.js"></script>
+</head>
+<body>
+    <form enctype="multipart/form-data" action="/savepic" method="post">
+        平台名：<select id="platform_select" name="platform_select">
+        <option>请选择</option>
+        </select>
+        <input type="text" id="platform_input" name="platform_input"/><br>
+        文章名：<select id="article_select" name="article_select">
+        <option>请选择</option>
+        </select>
+        <input type="text" id="article_input" name="article_input"/><br>
+
+        <input type="file" name="file"/><br>
+        <input type="submit" value="提交"/>
+    </form>
+</body>
+</html>
